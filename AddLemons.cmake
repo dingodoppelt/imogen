@@ -39,7 +39,11 @@ if(NOT COMMAND CPMAddPackage)
 	include ("${LEMONS_CPM_PATH}")
 endif()
 
-cpmaddpackage (NAME Lemons GITHUB_REPOSITORY dingodoppelt/Lemons GIT_TAG origin/main)
+cpmaddpackage(
+    NAME Lemons
+    GITHUB_REPOSITORY dingodoppelt/Lemons
+    GIT_TAG df0b1cfcaef4b55e527f315c1c808b3f20de0ced
+)
 
 list (APPEND CMAKE_MODULE_PATH ${LEMONS_CMAKE_MODULE_PATH})
 
