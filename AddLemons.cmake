@@ -26,7 +26,7 @@ if(NOT COMMAND CPMAddPackage)
 	set (CMAKE_PREFIX_PATH "${CMAKE_PREFIX_PATH}" CACHE INTERNAL "")
 
 	set (LEMONS_CPM_PATH "$ENV{CPM_SOURCE_CACHE}/CPM.cmake" CACHE PATH
-																  "Path to the CPM.cmake script")
+															  "Path to the CPM.cmake script")
 	mark_as_advanced (FORCE LEMONS_CPM_PATH)
 
 	if(NOT EXISTS ${LEMONS_CPM_PATH})
@@ -39,8 +39,8 @@ if(NOT COMMAND CPMAddPackage)
 	include ("${LEMONS_CPM_PATH}")
 endif()
 
-cpmaddpackage (NAME Lemons GITHUB_REPOSITORY benthevining/Lemons GIT_TAG origin/main)
+cpmaddpackage (NAME Lemons GITHUB_REPOSITORY dingodoppelt/Lemons GIT_TAG origin/main)
 
 list (APPEND CMAKE_MODULE_PATH ${LEMONS_CMAKE_MODULE_PATH})
 
-set (CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} CACHE INTERNAL "")
+set (CMAKE_MODULE_PATH "${CMAKE_MODULE_PATH}" CACHE INTERNAL "")
